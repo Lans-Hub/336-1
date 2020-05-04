@@ -1,0 +1,60 @@
+        private void dataGridView1_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Здесь представлена таблица Clients";
+        }
+
+        private void dataGridView2_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Здесь представлена таблица Holdings";
+        }
+
+        private void dataGridView3_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Здесь представлена таблица Industry";
+        }
+
+        private void dataGridView4_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Здесь представлена таблица Master";
+        }
+
+        private void dataGridView1_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void dataGridView2_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void dataGridView3_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void dataGridView4_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void contentToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Реализация задания 'Содержание' ";
+        }
+
+        private void contentToolStripMenuItem_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string commandText = @"D:\\Help.chm";
+            var proc = new System.Diagnostics.Process();
+            proc.StartInfo.FileName = commandText;
+            proc.StartInfo.UseShellExecute = true;
+            proc.Start();
+        }
+    }
+    }
